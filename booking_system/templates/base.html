@@ -1,0 +1,58 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-datetimepicker/2.5.20/jquery.datetimepicker.min.css" integrity="sha256-DOS9W6NR+NFe1fUhEE0PGKY/fubbUCnOfTje2JMDw3Y=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="{% static 'css/jquery.datetimepicker.min.css' %}">
+      <link
+    rel="stylesheet"
+    href="{% static 'css/all.min.css' %}"
+  />
+  <!-- Page CSS -->
+  <link
+    rel="stylesheet"
+    href=" {% static 'css/fullcalendar.min.css'%}"
+  />
+  <link
+    rel="stylesheet"
+    href=" {% static 'css/sweetalert2.min.css'%}"
+  />
+  <!-- Purpose CSS -->
+  <link rel="stylesheet" href="{%static 'css/purpose.css'%}" id="stylesheet" />
+    <script src="{% static 'js/jquery.datetimepicker.full.min.js' %}"></script>
+   
+  </head>
+  <body>
+    
+    {%block content%}
+
+    {%endblock%}
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-datetimepicker/2.5.20/jquery.datetimepicker.full.min.js" integrity="sha256-FEqEelWI3WouFOo2VWP/uJfs1y8KJ++FLh2Lbqc8SJk=" crossorigin="anonymous"></script>
+    <script src="{%static 'js/purpose.core.js'%}"></script>
+<!-- Page JS -->
+<script src="{%static 'js/moment.min.js'%}"></script>
+<script src=" {%static 'js/fullcalendar.min.js'%}"></script>
+<script src=" {%static 'js/sweetalert2.min.js'%}"></script>
+<!-- Purpose JS -->
+<script src="{%static 'js/purpose.js'%}"></script>
+
+    <script>
+      $(function () {
+    $("#id_date").datetimepicker({
+      format: 'd/m/Y H:i',
+    });
+  });
+    </script>
+  </body>
+</html>
